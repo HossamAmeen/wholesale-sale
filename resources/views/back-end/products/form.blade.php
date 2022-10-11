@@ -115,7 +115,7 @@ calculate_total_price();
 function calculate_total_price() {
     var quantity = parseInt(document.getElementById('quantity').value);
 
-    var purchasing_price = parseInt(document.getElementById('purchasing_price').value);
+    var purchasing_price = parseFloat(document.getElementById('purchasing_price').value);
 
     var total =0;
     total= purchasing_price * quantity;
