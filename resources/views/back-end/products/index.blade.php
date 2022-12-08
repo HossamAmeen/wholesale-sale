@@ -47,7 +47,7 @@
         <tr>
             <th>#</th>
             <th>الاسم</th>
-            <th>سعر الشراء</th>
+            {{-- <th>سعر الشراء</th> --}}
             <th>سعر البيع(جملة)</th>
             <th>سعر البيع(قطاعي)</th>
             <th>الكمية</th>
@@ -65,7 +65,7 @@
         <tr @if($item->quantity < 3) style="color: red" @endif>
                 <td> {{$row_num++}}</td>
                 <td>{{$item->name}}</td>
-                <td>{{$item->purchasing_price}}</td>
+                {{-- <td>{{$item->purchasing_price}}</td> --}}
                 <td>{{$item->selling_wholesale_price}}</td>
                 <td>{{$item->selling_sectoral_price}}</td>
                 <td>{{$item->quantity}}</td>
